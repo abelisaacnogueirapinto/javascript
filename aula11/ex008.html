@@ -11,21 +11,37 @@
          
     <p>
         <label for="iprof">País de Origem</label>
-        <input type="text" name="pais" id="ipais" list="lstpais">
-        <datalist id="lstpais" onclick="escolha()">
-            <option>Brasil</option>
-            <option>Chine</option>
-            <option>Estados Unidos</option>
-            <option>França</option>
+        <input type="text" name="ipais" id="ipais" list="lstpais">
+        <datalist id="lstpais">
+            <select>
+                <option data-value="1" value="Brasil"> Brasil</option>
+                <option data-value="2" value="Chine">Chine</option>
+                <option data-value="3" value="EUA">EUA</option>
+                <option data-value="4" value="France">France</option>
+            </select> 
         </datalist>
 
     </p>
     <p>
-        <input type="submit" value="verificar">
-        <input type="reset" value="Limpar">
-    </p>
-   
-   
+       <input id="x" type="button" value="Verifique" onclick="escolha()" list="lstpais">       
+</p>
+        
+        
+   <div id="mostra"></div>
+   <script>
+        function escolha() {
+            let vpais = document.getElementById('lstpais')
+            var mostra= document.querySelector('div#mostra')
+            var vel = Number('vpais')
+            mostra.innerHTML= `<p> O país escolhido foi <strong> ${vel}</strong> `
+            if (vel != 'Brasil') {
+             mostra.innerHTML += `<p>Você mora em <strong>${vel}</strong> e é estrangeiro</p>`
+
+            } else {
+                mostra.innerHTML += `Vocé é brasileiro nato!`
+            }
+        }
+   </script>
     
 </body>
 </html>
