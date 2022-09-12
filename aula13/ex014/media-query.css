@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@media screen and (min-width:768px) {
+   section {
+        width: 768px;
+        text-align: center;
+        
+     }
+    div#foto >img {
+        border-radius: 50%;
+        height: auto ;
+        width:50% ;
+       
+    }
+
+}
+    
