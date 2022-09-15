@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de execicio</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            testando 1
-
+            <p>Numero: <input type="number" name="ntab" id="itab" >
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+            <p><fieldset id="radio">
+                <legend>Operador</legend>
+                <input type="radio" name="opera" id="isoma"> <label for="isoma"></label>&#x2795</label>
+                <input type="radio" name="opera" id="isubt"> <label for="isubt">&#x2796	</label>
+                <input type="radio" name="opera" id="imult"> <label for="imult">&#x2716	</label>
+                <input type="radio" name="opera" id="idivi"> <label for="idivi">&#x2797	</label>
+            </fieldset></p>
         </div>
-        <div>
-
-             testando 2
+        <div id="res">
+            aparecendo 
+             
         </div>
 
     </section>
