@@ -9,32 +9,36 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada de Multiplicação ou calculadora</h1>
+        <h1>Tabuada ou calculadora</h1>
     </header>
     <section>
         <div>
-            
+            <div id="botao">
             <p>Numero: <input type="number" name="ntab" id="itab" >
-            
+                <input type="button" value="Gerar Tabuada" id="btc" onclick="tabuada()"></p>
+            </div>
             
             <p><fieldset id="radio">
                 <legend>Operador</legend>
                 <input type="radio" name="opera" id="isoma" value="A">  &#x2795
-                <input type="radio" name="opera" id="isubt" value="S" > &#x2796	
+                <input type="radio" name="opera" id="isubt" value="S">  &#x2796	
                 <input type="radio" name="opera" id="imult" value="M">  &#x2716	
                 <input type="radio" name="opera" id="idivi" value="D">  &#x2797	
             </fieldset></p>
-            <p>Número: <input type="number" name="ncalc" id="icalc"> </p>
-            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+            <p>Número: <input type="number" name="ncalc" id="icalc"> 
+           <div id="botao2">
+                <input type="button" value="calculadora" id="btc" onclick="calcular()" ></p>
+                <input type="reset" value="Limpar" id="btc" onclick="limpar()">
+           </div>    
         </div>
-        <div id="res">
-          <p>Deixe o segundo valor em branco caso queira uma tabuada</p> 
+        <div id="res" font-size="10">
+          resultado 
              
         </div>
 
     </section>
     <footer>
-        <p>&copy;CursoemVideo</p>
+        <p>&copy;Abel Nogueira</p>
     </footer>
     <script src="script.js"></script>
 </body>

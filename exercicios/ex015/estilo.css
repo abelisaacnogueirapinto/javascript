@@ -1,13 +1,16 @@
 @charset "UTF-8";
 body {
-    background: rgb(106, 106, 250);
+    background: rgb(170, 170, 184);
     font: normal 15pt arial;
 }
 header {
-    color:white;
+    color:rgb(196, 61, 61);
     text-align: center;
 
 
+}
+fieldset{
+    background:llow;
 }
 section {
     background: white;
@@ -16,10 +19,24 @@ section {
     width: 500px;
     margin:auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
-
+}
+#btc, #bt{
+    background-color: rgb(13, 22, 13);
+    color:white;
+    border-radius: 10%;
+    border-style: 1px;
+    border-color: rgb(215, 239, 215);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.449);
 
 }
+#btc:hover {
+    color: green;
+}
+
+
+
 footer {
+    font-size: 20pt;
     color:white;
     text-align: center;
     font-style: italic;
