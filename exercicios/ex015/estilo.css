@@ -32,8 +32,12 @@ section {
 #btc:hover {
     color: green;
 }
-
-
+#bt:hover {
+    color: green;
+}
+div#res {
+    font-size: 8pt;
+}
 
 footer {
     font-size: 20pt;

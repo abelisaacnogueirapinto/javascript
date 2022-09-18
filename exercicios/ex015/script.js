@@ -1,24 +1,19 @@
 function tabuada() {
-  console.log("chegou a1");
-  let num = document.getElementById("itab");
-  let res = document.getElementById("res");
-  let n = num.value;
+  let tab = document.getElementById("seltab");
 
-  /*
-    let opA = document.getElementById("isoma").value;
-    let opS = document.getElementById("isubt").value;
-    let opM = document.getElementById("imult").value;
-    let opD = document.getElementById("idivi").value;
-    */
+  let num = document.getElementById("itab");
+  let n = num.value;
 
   if (!num.value) {
     window.alert("favor colocar um número");
-    res.innerHTML = "";
+    tab.innerHTML = "";
   } else {
-    res.innerHTML = " Tabuada Multiplicação";
+    tab.innerHTML = "";
     for (let c = 0; c <= 10; c++) {
-      let t = n * c;
-      res.innerHTML += `<p> ${n} X ${c} = ${t} </p> `;
+      let item = document.createElement("option");
+      item.text = ` ${n} x ${c} = ${n * c}  `;
+      item.tab = "tab${c}"; // para saber qual seleção foi feita no  tab (1,2,3....)
+      tab.appendChild(item);
     }
   }
 }
